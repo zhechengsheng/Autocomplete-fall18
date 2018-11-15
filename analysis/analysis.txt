@@ -1,11 +1,37 @@
 Put your name and netid here
+Zhecheng Sheng 
+zs68
 
 (1) Run the program BenchmarkForAutocomplete and copy/paste the 
 results here this for #matches = 20
+search	size	#match	binary	brute
+	456976	20	0.2772	0.0090
+a	17576	20	0.0095	0.0070
+b	17576	20	0.0084	0.0032
+c	17576	20	0.0092	0.0032
+x	17576	20	0.0088	0.0040
+y	17576	20	0.0082	0.0036
+z	17576	20	0.0100	0.0040
+aa	676	20	0.0087	0.0033
+az	676	20	0.0084	0.0041
+za	676	20	0.0073	0.0037
+zz	676	20	0.0094	0.0030
 
 (2) Run the program again for #matches = 10000, paste the results, 
 and then make any conclusions about how the # matches 
 effects the runtime. 
+search	size	#match	binary	brute
+	456976	10000	0.1795	0.0237
+a	17576	10000	0.0082	0.0104
+b	17576	10000	0.0073	0.0059
+c	17576	10000	0.0088	0.0065
+x	17576	10000	0.0072	0.0065
+y	17576	10000	0.0070	0.0059
+z	17576	10000	0.0074	0.0057
+aa	676	10000	0.0061	0.0036
+az	676	10000	0.0066	0.0029
+za	676	10000	0.0068	0.0032
+zz	676	10000	0.0059	0.0036
 
 (3) Copy/paste the code from BruteAutocomplete.topMatches below. 
 Explain what the Big-Oh complexity of the entire loop: 
