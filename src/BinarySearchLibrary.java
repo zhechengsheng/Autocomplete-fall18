@@ -31,7 +31,7 @@ public class BinarySearchLibrary {
 	public static <T>
     	int firstIndex(List<T> list, 
 	               	T target, Comparator<T> comp) {
-		
+		if(list == null)return -1;
 		int low = -1;
 		int high = list.size()-1;
 		// (low,high] contains target
@@ -72,12 +72,11 @@ public class BinarySearchLibrary {
 	int lastIndex(List<T> list, 
                	  T target, Comparator<T> comp) {
 		
+		if(list==null) return -1;
+
 		int low = 0;
 		int high = list.size();
-		
-		// target in [low,high)
-		// TODO: complete method
-			while(low!=high-1) {
+		while(low!=high-1) {
 				int mid = (low + high)/2;
 				T midval = list.get(mid);
 				int ans = comp.compare(midval, target);
