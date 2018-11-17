@@ -113,7 +113,6 @@ public class BinarySearchAutocomplete implements Autocompletor {
 		Comparator<Term> comp = new Term.PrefixOrder(l);
 		Comparator<Term> comp1 = new Term.ReverseWeightOrder();
 		ArrayList<Term> list = new ArrayList<>();
-		Arrays.sort(myTerms, comp);
 		int low = BinarySearchLibrary.firstIndex(Arrays.asList(myTerms), base, comp);
 		int high = BinarySearchLibrary.lastIndex(Arrays.asList(myTerms), base, comp);
 		if(low ==-1| high==-1)return list;
